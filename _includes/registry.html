@@ -1,0 +1,19 @@
+    <!-- Registry Section -->
+    <section id="registry" class="content-section text-center">
+        <div class="registry-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Registry</h2>
+                    <p>Sarah and Brian are registered at the following places: </p>
+                    <ul class="list-inline banner-social-buttons"> 
+                        {% for network in site.social %}
+                        <li>
+                            <!--<a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>-->
+                            <a href="{{ network.url }}" class="btn btn-default btn-lg"><img src="{{network.path}}" alt="{{ network.title }}"> </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
