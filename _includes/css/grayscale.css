@@ -5,17 +5,16 @@
  */
 
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     font-family: 'Abel', sans-serif;
-    /*font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     color: #2f2922;
     background-color: {{ site.color.primary-dark }};
 }
 
 html {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1,
@@ -25,9 +24,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 35px;
-    /*text-transform: uppercase;*/
     font-family: 'Dancing Script', cursive;
-    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -147,16 +144,16 @@ a:focus {
 
 .intro {
     display: table;
-    width: 100%;
+    width: 100vw;
     height: auto;
     padding: 100px 0;
     text-align: center;
     color: #fff;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/flowers.jpg') no-repeat bottom center scroll;
+    background-size: cover;
     background-color: {{ site.color.primary-dark }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
 }
 
@@ -176,7 +173,7 @@ a:focus {
 
 @media(min-width:767px) {
     .intro {
-        height: 100%;
+        height: 100vh;
         padding: 0;
     }
 
@@ -266,14 +263,12 @@ a:focus {
 .baby-trivia-section{
     padding-top: 100px;
     padding-bottom: 100px;
+    background-color: #cece9a;
+    color: #fff;
 }
 
 .price-is-right-section {
-    width: 100%;
-    height: 100%;
     padding: 100px 0;
-    color: #fff;
-    background-color: #cece9a;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -286,7 +281,6 @@ a:focus {
 }
 
 .guestbook-section {
-    width: 100%;
     padding: 50px 0;
     color: #fff;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/flowers.jpg') no-repeat bottom center scroll;
@@ -298,8 +292,6 @@ a:focus {
 }
 
 .registry-section {
-    width: 100%;
-    height: 100%;
     padding: 100px 0;
     color: #fff;
     background-color: #a3d2c4;
@@ -309,9 +301,11 @@ a:focus {
     -o-background-size: cover;
 }
 
+.about-text{
+    padding: 10%
+}
+
 .baby-bets-section {
-    width: 100%;
-    height: 100%;
     padding: 100px 0;
     color: #fff;
     background-color: #f6d2c4;
@@ -323,13 +317,13 @@ a:focus {
 
 
 #map {
-    width: 100%;
+    width: 100;
     height: 200px;
     margin-top: 100px;
 }
-/*
+
 @media(min-width:767px) {
-    .content-section {
+    .baby-trivia-section {
         padding-top: 200px;
     }
 
@@ -341,7 +335,7 @@ a:focus {
         height: 400px;
         margin-top: 250px;
     }
-}*/
+}
 
 .btn {
     text-transform: uppercase;
@@ -374,10 +368,18 @@ ul.banner-social-buttons li {
     margin-bottom: 15px;
 }
 
+ul.banner-social-buttons img{
+    max-width: 100%;
+}
+
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
+}
+
+.registry-buttons{
+    max-width: 80vw;
 }
 
 @media(max-width:767px) {
