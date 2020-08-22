@@ -305,6 +305,36 @@ a:focus {
     padding: 10%
 }
 
+.cocktail-section {
+    padding: 100px 0;
+    background-color: #f7cbca;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.cocktail-photo {
+    width: 100%;
+}
+
+.recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media(max-width:550px) {
+    .recipe {    
+        grid-template-columns: 1fr;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
 .baby-bets-section {
     padding: 100px 0;
     color: #fff;
