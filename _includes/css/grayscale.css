@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 35px 0 35px;
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
     letter-spacing: 1px;
@@ -43,6 +43,7 @@ p {
     }
 }
 
+
 a {
     color: {{ site.color.links }};
     -webkit-transition: all .2s ease-in-out;
@@ -58,6 +59,10 @@ a:focus {
 
 .light {
     font-weight: 400;
+}
+
+.navbar-nav {
+    padding-right: 15px;
 }
 
 .navbar-custom {
@@ -109,9 +114,35 @@ a:focus {
     background-color: rgba(255,255,255,.3);
 }
 
+@media(max-width:966px) {
+    .navbar-custom {
+        font-size: 12px;
+    }
+    .navbar-brand {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:871px) {
+    .navbar-custom {
+        font-size: 9px;
+    }
+    .navbar-brand {
+        font-size: 11px;
+    }
+}
+
+@media(max-width:766px) {
+    .navbar-custom {
+        font-size: 14px;
+    }
+    .navbar-brand {
+        font-size: 18px;
+    }
+}
+
 @media(min-width:767px) {
     .navbar {
-        color: #2f2922 !important;
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
